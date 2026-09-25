@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cursed Bulletin — Daily Cursed News &amp; Memes</title>
+<meta name="description" content="Daily cursed news & memes. That's the bulletin. Follow @cursedbulletin on Instagram.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<meta property="og:title" content="Cursed Bulletin">
+<meta property="og:description" content="Daily cursed news & memes. That's the bulletin.">
+<meta property="og:image" content="assets/mascot.png">
+<meta property="og:url" content="https://cursedbulletin.com">
+<link rel="stylesheet" href="style.css?v=2">
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a class="brand" href="#top">
+      <img src="assets/mascot.png" alt="Cursed Bulletin mascot">
+      <span>CURSED <em>BULLETIN</em></span>
+    </a>
+    <div class="nav-links">
+      <a href="#latest">Latest</a>
+      <a href="#tips">Tip line</a>
+      <a href="#about">About</a>
+      <a class="btn btn-lime btn-sm" href="https://www.instagram.com/cursedbulletin" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="mascot-ring">
+      <img src="assets/mascot.png" alt="The raven reporter — Cursed Bulletin mascot">
+    </div>
+    <h1>DAILY CURSED<br>NEWS <span class="row2">&amp; MEMES.</span></h1>
+    <p class="tag">That's the bulletin.</p>
+    <p class="sub">The internet's weirdest true stories, reported deadpan by a raven in a hard hat. New drops every day at 6 PM IST.</p>
+    <div class="hero-ctas">
+      <a class="btn btn-lime" href="https://www.instagram.com/cursedbulletin" target="_blank" rel="noopener">Follow @cursedbulletin</a>
+      <a class="btn btn-ghost" href="#tips">Snitch to the raven</a>
+    </div>
+  </div>
+</header>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>CURSED OR NOT?</span><span class="lime">•</span><span>THAT'S THE BULLETIN.</span><span class="lime">•</span><span>DAILY CURSED NEWS &amp; MEMES.</span><span class="lime">•</span><span>CURSED OR NOT?</span><span class="lime">•</span><span>THAT'S THE BULLETIN.</span><span class="lime">•</span><span>DAILY CURSED NEWS &amp; MEMES.</span><span class="lime">•</span>
+  </div>
+</div>
+
+<section class="block" id="latest">
+  <div class="wrap">
+    <div class="kicker">FRESH OFF THE WIRE</div>
+    <div class="drops-head">
+      <h2 class="head">LATEST DROPS.</h2>
+      <div class="drops-nav">
+        <button id="dropsPrev" aria-label="Previous posts">←</button>
+        <button id="dropsNext" aria-label="Next posts">→</button>
+      </div>
+    </div>
+    <p class="lead">New cursed news drops daily at 6 PM IST. Swipe through the bulletin board — every post, with its full caption.</p>
+    <div class="drops" id="drops"><!-- posts.json se load hoga --></div>
+    <div class="drops-more"><button class="btn" id="loadMore" hidden>LOAD MORE ↓</button></div>
+    <div class="center">
+      <a class="btn btn-ghost" href="https://www.instagram.com/cursedbulletin" target="_blank" rel="noopener">See everything on Instagram</a>
+    </div>
+  </div>
+</section>
+
+<section class="block tipline" id="tips">
+  <div class="wrap">
+    <div class="tip-grid">
+      <div>
+        <div class="kicker">THE TIP LINE</div>
+        <h2 class="head">SEEN SOMETHING CURSED?</h2>
+        <p class="lead">Snitch to the raven. The best tips make the bulletin — with credit, if you want it.</p>
+        <ul class="tip-points">
+          <li>Links &amp; screenshots of cursed news</li>
+          <li>Your own cursed sightings, on video</li>
+          <li>Stories the mainstream missed</li>
+        </ul>
+        <a class="btn btn-lime" href="mailto:tips@cursedbulletin.com">tips@cursedbulletin.com</a>
+        <p class="contact-line">Business &amp; collabs → <a href="mailto:info@cursedbulletin.com">info@cursedbulletin.com</a></p>
+      </div>
+      <form class="tip-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <!-- TO ACTIVATE: sign up free at formspree.io, create a form, and paste your endpoint above replacing YOUR_FORM_ID -->
+        <label for="t-name">Your name (optional)</label>
+        <input id="t-name" type="text" name="name" placeholder="Anonymous raven is fine too">
+        <label for="t-link">Link to the cursed thing</label>
+        <input id="t-link" type="url" name="link" placeholder="https://…">
+        <label for="t-msg">What happened? *</label>
+        <textarea id="t-msg" name="message" required placeholder="Tell the raven everything…"></textarea>
+        <button type="submit">Send the tip</button>
+        <p class="form-note">No spam, no selling your data. Tips only.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <img class="mascot-big" src="assets/mascot.png" alt="Cursed Bulletin mascot — white raven reporter">
+      <div>
+        <div class="kicker">ABOUT</div>
+        <h2 class="head">REPORTED BY A RAVEN.</h2>
+        <p class="lead">Cursed Bulletin is a one-raven newsroom covering the internet's most bizarre true stories — AI hoaxes, cursed animals, unhinged headlines. Real stories, deadpan delivery, zero chill.<br><br>Nothing here is made up for clicks. If it's on the bulletin, it happened.</p>
+        <div class="hero-ctas" style="justify-content:flex-start; margin-top:28px;">
+          <a class="btn btn-lime" href="https://www.instagram.com/cursedbulletin" target="_blank" rel="noopener">Follow the bulletin</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="block fineprint" id="disclaimer">
+  <div class="wrap">
+    <div class="kicker">THE FINE PRINT</div>
+    <h2 class="head">DISCLAIMER.</h2>
+    <div class="fine-grid">
+      <div class="fine-card">
+        <h3>REAL STORIES, REAL SOURCES</h3>
+        <p>Every bulletin is based on publicly available news reports and viral posts. Each Instagram post carries its source — check it yourself before you @ us.</p>
+      </div>
+      <div class="fine-card">
+        <h3>NOT AFFILIATED</h3>
+        <p>Cursed Bulletin is an independent page. It is not affiliated with, endorsed by, or connected to Instagram, Meta, or any outlet, brand, or person featured.</p>
+      </div>
+      <div class="fine-card">
+        <h3>REPORTED DEADPAN</h3>
+        <p>Stories are covered with deadpan humour for entertainment and commentary. If you're featured in a story and want a correction or takedown, write to <a href="mailto:info@cursedbulletin.com">info@cursedbulletin.com</a> — the raven responds fast.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="f-brand">CURSED <em>BULLETIN</em></div>
+    <div class="f-links">
+      <a href="https://www.instagram.com/cursedbulletin" target="_blank" rel="noopener">Instagram</a>
+      <a href="mailto:tips@cursedbulletin.com">Tip line</a>
+      <a href="mailto:info@cursedbulletin.com">Contact</a>
+      <a href="#disclaimer">Disclaimer</a>
+    </div>
+    <p>© 2026 Cursed Bulletin. That's the bulletin.</p>
+  </div>
+</footer>
+
+<script>
+fetch('posts.json')
+  .then(function(r){ return r.json(); })
+  .then(function(posts){
+    var wrap = document.getElementById('drops');
+    var moreBtn = document.getElementById('loadMore');
+    var PAGE = 10, shown = 0;
+    function esc(s){
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;')
+        .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+    function cardHTML(p){
+      return '<article class="drop-card">' +
+        '<a class="drop-img" href="' + esc(p.url) + '" target="_blank" rel="noopener">' +
+          '<img src="' + esc(p.image) + '" alt="' + esc(p.alt) + '" loading="lazy">' +
+        '</a>' +
+        '<div class="drop-body">' +
+          '<p class="drop-date">' + esc(p.date) + '</p>' +
+          '<p class="drop-cap">' + esc(p.caption) + '</p>' +
+          '<button class="readmore" type="button">Read more</button>' +
+          '<a class="drop-link" href="' + esc(p.url) + '" target="_blank" rel="noopener">View on Instagram ↗</a>' +
+        '</div>' +
+      '</article>';
+    }
+    function bindReadmore(){
+      wrap.querySelectorAll('.readmore:not([data-bound])').forEach(function(btn){
+        btn.setAttribute('data-bound', '1');
+        btn.addEventListener('click', function(){
+          var card = btn.closest('.drop-card');
+          var open = card.classList.toggle('open');
+          btn.textContent = open ? 'Show less' : 'Read more';
+        });
+      });
+    }
+    function renderMore(){
+      var next = posts.slice(shown, shown + PAGE);
+      var tmp = document.createElement('div');
+      tmp.innerHTML = next.map(cardHTML).join('');
+      while (tmp.firstChild) wrap.appendChild(tmp.firstChild);
+      bindReadmore();
+      shown += next.length;
+      moreBtn.hidden = shown >= posts.length;
+    }
+    moreBtn.addEventListener('click', renderMore);
+    renderMore();
+    function step(){
+      var c = wrap.querySelector('.drop-card');
+      return (c ? c.offsetWidth : 340) + 24;
+    }
+    document.getElementById('dropsPrev').addEventListener('click', function(){
+      wrap.scrollBy({ left: -step(), behavior: 'smooth' });
+    });
+    document.getElementById('dropsNext').addEventListener('click', function(){
+      wrap.scrollBy({ left: step(), behavior: 'smooth' });
+    });
+  })
+  .catch(function(){
+    document.getElementById('drops').innerHTML =
+      '<p class="lead">The bulletin board is being restocked. Check back soon.</p>';
+  });
+</script>
+
+</body>
+</html>
